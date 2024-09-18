@@ -1,14 +1,14 @@
 $fn=50;
-dist=13.1;
+dist=12.7;
 difference() {
     minkowski()
     {
-        cube([28,28,0.3], center = true);
-        cylinder(r=2,h=0.3);
+        cube([29,29,0.45], center = true);
+        cylinder(r=2,h=0.45);
     }
     for(step = [0, 90, 180, 270]){
         rotate(step){
-            translate([dist,dist,-0.2]){
+            translate([dist,dist,-0.3]){
                 cylinder(r=1.8,h=1);
             }
         }
