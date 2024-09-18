@@ -1,5 +1,5 @@
 $fn=50;
-dist=12.7;
+dist=12.6;
 difference() {
     minkowski()
     {
@@ -14,5 +14,5 @@ difference() {
         }
     }
 
-    cylinder(r=15.2,h=2, center = true);
+    cylinder(r=15.1,h=2, center = true);
 }
