@@ -30,13 +30,13 @@ difference() {
             };
             translate([6.3, 5, -1]) {
                 cylinder(h=19, r=2.25);
-                translate([-4.15, 0, 12.5]) {
+                translate([-4.15, -4.15, 12.5]) {
                     cube([8.3, 15, 2.4]);
                 };
             };
             translate([20.7, 5, -1]) {
                 cylinder(h=19, r=2.25);
-                translate([-4.15, 0, 12.5]) {
+                translate([-4.15, -4.15, 12.5]) {
                     cube([8.3, 15, 2.4]);
                 };
             };
