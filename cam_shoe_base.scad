@@ -7,12 +7,12 @@ $fn=40;
 y1=13;
 y2=9.2;
 alice=[
-    [2.2, y1], [2.2, y1-0.5],
-    [4, y2], [5, y2]
+    [2.1, y1], [2.1, y1-0.5],
+    [3.9, y2], [4.9, y2]
 ];
 bob=[
-    [22, y2], [23, y2],
-    [24.8, y1-0.5], [24.8, y1]
+    [22.1, y2], [23.1, y2],
+    [25, y1-0.5], [25, y1]
 ];
 edges=
     concat(
@@ -29,13 +29,13 @@ difference() {
                 polygon(edges);
             };
             translate([6.3, 5, -1]) {
-                cylinder(h=19, r=2.25);
+                cylinder(h=19, r=2.3);
                 translate([-4.15, -4.15, 12.5]) {
                     cube([8.3, 15, 2.4]);
                 };
             };
             translate([20.7, 5, -1]) {
-                cylinder(h=19, r=2.25);
+                cylinder(h=19, r=2.3);
                 translate([-4.15, -4.15, 12.5]) {
                     cube([8.3, 15, 2.4]);
                 };
@@ -51,8 +51,8 @@ difference() {
     };
     translate([13.5, -35.3, -0.1]) {
         cylinder(r=3.5, h=11, $fn=80);
-        translate([0,0,0.3]){
-            cylinder(r=5.9, h=10, $fn=6);
+        translate([0,0,0.6]){
+            cylinder(r=6, h=10, $fn=6);
         };
     };
 };
