@@ -17,24 +17,26 @@ use <dot/rounded_square.scad>
   Maybe simple zip tie attach it to the beamer
 */
 $fn=80;
+difference() {
+union() {
 rotate([0,180,0]){
 difference() {
-    rounded_cube([36, 68, 32], 0.5);
+    rounded_cube([36, 68, 33], 0.5);
     translate([1,1,1]) {
         cube([34, 66, 30]);
     };
 
-    translate([0, 6, 20]) {
+    translate([0, 6, 26]) {
         rotate([0,90,0]) {
             linear_extrude(5) {
-                rounded_square([14, 26], 1);
+                rounded_square([15, 26], 1);
             };
         };
     };
-    translate([0, 50, 20]) {
+    translate([0, 50, 26]) {
         rotate([0,90,0]) {
             linear_extrude(5) {
-                rounded_square([14, 10], 1);
+                rounded_square([15, 10], 1);
             };
         };
     };
@@ -51,6 +53,31 @@ translate([6.5, 4.5, 28]) {
         }
     };
 };
-//cube([38,70,12]);
+cube([38,70,1]);
 };
+};
+};
+translate([-29, 0,6]) {
+for (i = [24:-4:0]) {
+    translate([i,0,-32]) {
+        rotate([0, 90 ,90]) {
+            linear_extrude(2) {
+                rounded_square([5,2], 0.5);
+            }
+        };
+    };
+};
+};
+translate([-29, 63, 6]){
+    for (i = [24:-4:0]) {
+    translate([i,0,-32]) {
+        rotate([0, 90 ,90]) {
+            linear_extrude(5) {
+                rounded_square([5,2], 0.5);
+            }
+        };
+    };
+};
+};
+
 };
