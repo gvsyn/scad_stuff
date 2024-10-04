@@ -7,10 +7,12 @@ intersection() {
     rounded_cube([36, 68, 33], 0.5);
     cube([38,70,1]);
 };
-translate([1.4,1.4,1]) {
-    linear_extrude(1.5) {
-        hollow_out(0.5) {
-            rounded_square([33.6,65.6], 0.5);
+color("green"){
+translate([1.35,1.35,1]) {
+    linear_extrude(2.5) {
+        hollow_out(0.8) {
+            rounded_square([33.3,65.3], 3);
         };
     };
+};
 };

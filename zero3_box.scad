@@ -29,17 +29,18 @@ difference() {
     translate([0, 6, 26]) {
         rotate([0,90,0]) {
             linear_extrude(5) {
-                rounded_square([15, 26], 1);
+                rounded_square([14.5, 26], 1);
             };
         };
     };
-    translate([0, 50, 26]) {
+    translate([0, 48, 26]) {
         rotate([0,90,0]) {
             linear_extrude(5) {
-                rounded_square([15, 10], 1);
+                rounded_square([14.5, 12], 1);
             };
         };
     };
+
 hole=1.8;
 translate([6.5, 4.5, 28]) {
     cylinder(6, r=hole);
@@ -57,27 +58,34 @@ cube([38,70,1]);
 };
 };
 };
-translate([-29, 0,6]) {
-for (i = [24:-4:0]) {
-    translate([i,0,-32]) {
+translate([-31, 0, 10]) {
+for (i = [24:-5:0]) {
+    translate([i,0,-31]) {
         rotate([0, 90 ,90]) {
             linear_extrude(2) {
-                rounded_square([5,2], 0.5);
+                rounded_square([8,3], 0.5);
             }
         };
     };
 };
 };
-translate([-29, 63, 6]){
-    for (i = [24:-4:0]) {
-    translate([i,0,-32]) {
+translate([-31, 63, 10]){
+    for (i = [24:-5:0]) {
+    translate([i,0,-31]) {
         rotate([0, 90 ,90]) {
             linear_extrude(5) {
-                rounded_square([5,2], 0.5);
+                rounded_square([8,3], 0.5);
             }
         };
     };
 };
 };
-
+    translate([-17, 64, -14]) {
+        rotate([0,90,90]) {
+            linear_extrude(5) {
+                rounded_square([2, 6], 1);
+            };
+        };
+    };
 };
+
