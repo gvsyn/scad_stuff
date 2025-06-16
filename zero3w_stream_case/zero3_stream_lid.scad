@@ -11,14 +11,17 @@ union() {
         translate([-1,-1,2]) {
             cube([128,52,4]);
         };
-        translate([21, 15, -1]) {
-            rounded_cube([27, 20, 5], 0.8);
+        translate([22, 15, -1]) {
+            rounded_cube([26, 20, 5], 0.8);
         }
         translate([65, 15, -1]) {
             rounded_cube([12, 20, 5], 0.8);
         }
-        translate([106, 13, -1]) {
-            rounded_cube([13, 22, 5], 0.8);
+        translate([65, 3, -1]) {
+            rounded_cube([14.5, 10, 5], 0.2);
+        }
+        translate([106, 12, -1]) {
+            rounded_cube([13, 23, 5], 0.8);
         }
     };
 
