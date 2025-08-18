@@ -4,7 +4,7 @@ use <BOSL/paths.scad>
 use <dot/bijection_offset.scad>
 use <dot/rounded_square.scad>
 
-$fn=80;
+$fn=120;
 
 intersection() {
     // bounding parts (for the curved top, etc)
@@ -15,6 +15,9 @@ intersection() {
         cube([30,50,37]);
     };
 union() {
+    translate([3.4,16,12]) {
+        cube([1,35,2]);
+    }
     // the bulk of the back plate (with holes cut)
     difference() {
         translate([-1,0,0]) {
